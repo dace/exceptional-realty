@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script);
 
+
+
 /*
 
 This is a comment
@@ -26,10 +28,10 @@ p { /* select all <p> */
 
 figcaption {
   /*
-  font-family : Georgia, "New Times Roman", serif;
-  font-size   : 0.75em;
-  font-weight : normal;
-  line-height : 1.5em;
+  font-family: Georgia, "New Times Roman", serif;
+  font-size  : 0.75em;
+  font-weight: normal;
+  line-height: 1.5em;
   */
   color      : #777;
   font       : normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
@@ -45,9 +47,7 @@ figcaption {
 
 }
 
-#logo { /* select elements with the id="logo" */
-  background-color: aqua;
-}
+
 
 
 
@@ -71,20 +71,99 @@ figcaption {
 }
 
 #details a:active {
-  color: red;
+  color : red;
+}
+
+
+/*////////////// MEDIA ////////////////*/
+
+
+img, video, audio {
+  max-width: 100%;
+}
+
+
+/*////////////// LAYOUT ////////////////*/
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin     : 0 auto;
+  width      : 960px;
+}
+
+.col-1 {
+  background : #ccc;
+  float      : left;
+  width      : 32%;
+}
+
+.col-2 {
+  background : #ccc;
+  float      : left;
+  width      : 66%;
+}
+
+.col-3 {
+  background : #ccc;
+}
+
+
+[class*="col-"] {
+  margin-left: 2%;
+}
+
+.first {
+  left margin: 0%;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
 }
 
 
 
+/*////////////// SECTIONS ////////////////*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+}
+
+section {
+  padding       : 20px;
+  margin-bottom : 20px;
+}
 
 
+/*////////////// SOCIAL ////////////////*/
 
+#social {
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  width: 40px;
+  z-index: 1;
 
+}
 
-
-
-
-
-
-
+#social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: yellow;
+}
 
